@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Hello World</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      function App() {
+        return (
+          <body>
+            <nav>
+              <ul>
+                <li class="inner">
+                  <a href="/">Home</a>
+                </li>
+                <li class="inner">
+                  <a href="/about_me">About me</a>
+                </li>
+                <li class="inner">
+                  <a href="/blog">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <header>
+              <h1>Sally Soandso</h1>
+            </header>
+            <main>
+              <section>
+                <h2>Education</h2>
+                <h3>University of Puerto Rico</h3>
+                <ul>
+                  <li>Graduation Date: May 2017</li>
+                  <li>B.A. in Astrophysics</li>
+                </ul>
+              </section>
+              <section>
+                <h2>Professional Experience</h2>
+                <h3>Arecibo Observatory</h3>
+                <ul>
+                  <li>Start Date: January 2018 - End Date: December 2018</li>
+                  <li>Role: Astrophycisist</li>
+                  <li>
+                    Description: "Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua."
+                  </li>
+                </ul>
+                <h3>Lajas Observatory</h3>
+                <ul>
+                  <li>Start Date: February 2019 - End Date: September 2019</li>
+                  <li>Role: Astrophycisist</li>
+                  <li>
+                    Description: "Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua."
+                  </li>
+                </ul>
+              </section>
+            </main>
+            <footer>© 2019 Sally Soandso</footer>
+          </body>
+        );
+      }
+      // Use the App component:
+      // insert the App's element tree into the #application-root
+      ReactDOM.render(<App />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>
