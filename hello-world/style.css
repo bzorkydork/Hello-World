@@ -1,0 +1,16 @@
+h1 {
+  font-family: "Inria Serif", serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inner {
+  display: inline-block;
+}
